@@ -14,12 +14,12 @@ function App() {
   }, []);
 
   return (
+    <div className="App">
     <Routes>
-      
           <Route path="/testing" element = {<h1>Test Route</h1>}/>
-          <Route path="/" element = {<h1>Page Count: {count}</h1>}/>
-            
+          <Route path="/" element = {<h1 className='text-3xl underline'>Page Count: {count}</h1>}/>
     </Routes>
+    </div>
   );
 }
 
